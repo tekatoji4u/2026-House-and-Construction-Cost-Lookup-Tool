@@ -1,0 +1,16 @@
+{
+  "name": "Tra cứu đơn giá nhà ở & công trình xây dựng",
+  "short_name": "Đơn giá Cà Mau",
+  "description": "Tra cứu đơn giá bồi thường theo QĐ 034/2025/QĐ-UBND tỉnh Cà Mau và suất vốn đầu tư nhà ở BXD 2025.",
+  "lang": "vi",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F4F9FD",
+  "theme_color": "#005993",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
