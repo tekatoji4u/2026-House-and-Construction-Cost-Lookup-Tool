@@ -1,4 +1,8 @@
-# Tra cứu đơn giá nhà ở & công trình xây dựng (Cà Mau)
+# VIValue · Tra cứu đơn giá nhà ở & công trình xây dựng (Cà Mau)
+
+![VIValue](icons/logo-full.jpg)
+
+_Vietnamese Asset Intelligence · Powered by Hải Đăng_
 
 Công cụ tra cứu nhanh đơn giá bồi thường nhà, công trình xây dựng, cây trồng, vật nuôi khi Nhà nước thu hồi đất theo **Quyết định số 034/2025/QĐ-UBND ngày 01/10/2025 của UBND tỉnh Cà Mau** (hiệu lực từ 01/10/2025), kèm **Suất vốn đầu tư xây dựng nhà ở năm 2025** của Bộ Xây dựng.
 
@@ -12,7 +16,7 @@ Công cụ tra cứu nhanh đơn giá bồi thường nhà, công trình xây d�
 - **Bảng kê tạm tính**: bấm `+` trên dòng đơn giá, nhập khối lượng, tự nhân hệ số và cộng tổng; xuất Excel (.xlsx), in; lưu lại trên máy.
 - Sao chép một dòng đơn giá, link chia sẻ đúng tab và từ khóa (vd: `index.html#tab=ct&q=gieng+khoan`).
 - Sidebar mục lục trên máy tính, ngăn kéo trên điện thoại; công tắc sáng/tối kiểu iOS.
-- Cài lên màn hình điện thoại và dùng offline (PWA) khi mở qua `https://` (vd GitHub Pages).
+- Cài lên màn hình điện thoại và dùng offline (PWA) khi mở qua `https://` (vd GitHub Pages). Trên iPhone: mở link bằng Safari → nút Chia sẻ → **Thêm vào MH chính**; biểu tượng và tên VIValue sẽ hiện trên màn hình.
 
 ## Cách dùng
 
