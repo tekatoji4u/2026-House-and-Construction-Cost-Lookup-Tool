@@ -3,12 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Tra cứu đơn giá nhà ở &amp; công trình xây dựng</title>
+<title>VIValue · Tra cứu đơn giá nhà ở &amp; công trình xây dựng</title>
 <meta name="description" content="Tra cứu đơn giá bồi thường nhà, công trình xây dựng, cây trồng, vật nuôi theo QĐ 034/2025/QĐ-UBND tỉnh Cà Mau và suất vốn đầu tư nhà ở BXD 2025.">
-<meta name="theme-color" content="#005993">
+<meta name="theme-color" content="#061A44">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="VIValue">
+<meta name="application-name" content="VIValue">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <link rel="manifest" href="manifest.webmanifest">
-<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="icon" href="icons/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
 <style>
 :root{
   --brand:#005993; --brand-2:#0A6FA9; --accent:#D71249;
@@ -36,9 +41,13 @@ mark{background:var(--mark);color:inherit;border-radius:3px;padding:0 1px}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 
 /* ---------- Đầu trang ---------- */
-header.top{position:sticky;top:0;z-index:40;height:var(--hdr);box-sizing:content-box;background:linear-gradient(135deg,var(--brand) 0%,var(--brand-2) 55%,var(--accent) 100%);color:#fff;padding:0 16px;padding-top:env(safe-area-inset-top);display:flex;align-items:center;gap:12px}
+header.top{position:sticky;top:0;z-index:40;height:var(--hdr);box-sizing:content-box;background:linear-gradient(120deg,#05163F 0%,#0A2F6E 60%,#0D56A8 100%);color:#fff;padding:0 16px;padding-top:env(safe-area-inset-top);display:flex;align-items:center;gap:12px}
 .menu-btn{display:none;border:0;background:rgba(255,255,255,.16);color:#fff;width:38px;height:38px;border-radius:10px;font-size:18px;flex-shrink:0}
+.logo{width:38px;height:38px;border-radius:10px;flex-shrink:0;box-shadow:0 0 0 1px rgba(255,255,255,.18)}
 .brand{flex:1;min-width:0}
+.brand h1 .vi{color:#fff}.brand h1 .val{color:#2BE4F2}
+.brand h1 .tag{font-weight:500;font-size:13px;opacity:.85;margin-left:8px}
+.about img{width:100%;border-radius:12px;margin-top:8px}
 .brand h1{margin:0;font-size:17px;line-height:1.3;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .brand p{margin:0;font-size:12.5px;opacity:.9;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .brand .short{display:none}
@@ -231,9 +240,10 @@ footer.foot{padding:24px;font-size:13px;color:var(--muted);line-height:1.6;text-
 <body>
 <header class="top">
   <button class="menu-btn" id="menuBtn" aria-label="Mở mục lục" aria-controls="side" aria-expanded="false">☰</button>
+  <img class="logo" src="icons/logo-mark.png" alt="" width="38" height="38">
   <div class="brand">
-    <h1><span class="long">Tra cứu đơn giá nhà ở &amp; công trình xây dựng</span><span class="short">Tra cứu đơn giá</span></h1>
-    <p>QĐ 034/2025/QĐ-UBND tỉnh Cà Mau · Suất vốn đầu tư nhà ở BXD 2025</p>
+    <h1><span class="vi">VI</span><span class="val">Value</span><span class="tag long">Vietnamese Asset Intelligence</span></h1>
+    <p>Tra cứu đơn giá nhà ở &amp; công trình xây dựng · QĐ 034/2025/QĐ-UBND Cà Mau · Suất vốn BXD 2025</p>
   </div>
   <button class="bk-btn" id="bkBtn" aria-haspopup="dialog">Bảng kê<b id="bkCount">0</b></button>
   <div class="ios"><span class="lbl" id="themeLbl">Tối</span><button class="switch theme" id="themeSw" role="switch" aria-checked="false" aria-labelledby="themeLbl"></button></div>
@@ -251,11 +261,12 @@ footer.foot{padding:24px;font-size:13px;color:var(--muted);line-height:1.6;text-
     </div>
     <details class="about">
       <summary>Giới thiệu &amp; căn cứ</summary>
+      <img src="icons/logo-full.jpg" alt="VIValue · Vietnamese Asset Intelligence · Powered by Hải Đăng" width="768" height="512" loading="lazy">
       <p>Đơn giá bồi thường nhà, công trình xây dựng, cây trồng, vật nuôi khi Nhà nước thu hồi đất theo Quyết định số 034/2025/QĐ-UBND ngày 01/10/2025 của UBND tỉnh Cà Mau (hiệu lực từ 01/10/2025) và Suất vốn đầu tư xây dựng nhà ở năm 2025 (Bộ Xây dựng).</p>
       <p>Công cụ chỉ để tham khảo, không thay thế văn bản. Khi lập phương án bồi thường phải đối chiếu văn bản gốc.</p>
       <p id="dataVer"></p>
     </details>
-    <div class="powered"><b>Powered by Hải Đăng</b>Phiên bản 2.1 · Innovation • Technology • Creativity</div>
+    <div class="powered"><b>Powered by Hải Đăng</b>VIValue 2.2 · Innovation • Technology • Creativity</div>
   </aside>
   <div class="scrim" id="scrim"></div>
 
@@ -592,7 +603,7 @@ $('toTop').addEventListener('click',()=>scrollTo({top:0,behavior:'smooth'}));
 
 /* Khởi động */
 const d=DATA_VERSION.split('-').reverse().join('/');
-$('dataVer').textContent='Dữ liệu cập nhật: '+d+'.';$('footVer').textContent='Dữ liệu cập nhật '+d+' · Phiên bản 2.1.';
+$('dataVer').textContent='Dữ liệu cập nhật: '+d+'.';$('footVer').textContent='Dữ liệu cập nhật '+d+' · VIValue 2.2.';
 const th=load('dg_theme');setTheme(th?th==='dark':!!(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches));
 const ks=load('dg_kt');if(ks&&[...$('ktSel').options].some(o=>o.value===ks)){$('ktSel').value=ks;$('ktCustom').value=load('dg_ktc')||''}
 $('ktCustom').hidden=$('ktSel').value!=='custom';

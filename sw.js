@@ -1,6 +1,6 @@
 // Lưu bản sao để dùng offline. Khi sửa index.html hoặc data.js, tăng số phiên bản dưới đây.
-const CACHE = 'dongia-v2.1-2026-11-23';
-const FILES = ['./', 'index.html', 'data.js', 'manifest.webmanifest', 'icons/icon.svg', 'icons/icon-192.png', 'icons/icon-512.png'];
+const CACHE = 'vivalue-v2.2-2026-11-24';
+const FILES = ['./', 'index.html', 'data.js', 'manifest.webmanifest', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/apple-touch-icon.png', 'icons/favicon-32.png', 'icons/logo-mark.png'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES)).then(() => self.skipWaiting()));
