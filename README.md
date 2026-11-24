@@ -15,7 +15,7 @@ Công cụ tra cứu nhanh đơn giá bồi thường nhà, công trình xây d�
 - Hệ số **KT** theo năm (Mục D.VIII, hoặc nhập tay) và **KV = 1,30** cho Hòn Khoai, Hòn Chuối; hiện song song đơn giá gốc và giá sau hệ số.
 - **Bảng kê tạm tính**: bấm `+` trên dòng đơn giá, nhập khối lượng, tự nhân hệ số và cộng tổng; xuất Excel (.xlsx), in; lưu lại trên máy.
 - Sao chép một dòng đơn giá, link chia sẻ đúng tab và từ khóa (vd: `index.html#tab=ct&q=gieng+khoan`).
-- Sidebar mục lục trên máy tính, ngăn kéo trên điện thoại; công tắc sáng/tối kiểu iOS.
+- Sidebar kính mục lục trên máy tính, thu gọn thành thanh biểu tượng bằng nút trên mép hoặc `Ctrl/⌘+B`; ngăn kéo trên điện thoại; công tắc sáng/tối kiểu iOS.
 - Cài lên màn hình điện thoại và dùng offline (PWA) khi mở qua `https://` (vd GitHub Pages). Trên iPhone: mở link bằng Safari → nút Chia sẻ → **Thêm vào MH chính**; biểu tượng và tên VIValue sẽ hiện trên màn hình.
 
 ## Cách dùng
